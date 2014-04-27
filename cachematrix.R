@@ -42,6 +42,7 @@ makeCacheMatrix <- function(x = matrix()) {
       return(s)
       }
     data <- x$get()
+    ##use solve function to get inverse
     s <- solve(data, ...)
     x$setinverse(s)
     s
